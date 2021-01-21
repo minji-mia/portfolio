@@ -1,5 +1,7 @@
-# portfolio
+# Portfolio
+
 This repo is for my portfolio website. 
+![Copy of Untitled (1)](https://user-images.githubusercontent.com/52568892/105366827-640a1780-5bc5-11eb-95f9-ce428e2756f2.png)
 
 ## Built with
 
