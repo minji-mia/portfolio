@@ -6,7 +6,7 @@
     <title>I'm Minji Kim</title>
     <meta name="description" content="Portfolio for software engineer Minji">
     <meta name="author" content="Minji Kim">
-    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link rel="icon" type="image/ico" href="imgs/favicon.ico" />
     <script 
         src="https://kit.fontawesome.com/b77a0a92c7.js" 
         crossorigin="anonymous"
@@ -22,46 +22,356 @@
 <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar__logo"></div>
+        <div class="navbar__logo">
             <img 
                 src="imgs/logo.png" 
                 alt="logo image" 
                 class="navbar__logo__img"
             />
-            <a href="#">Minji</a>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My jounery</li>
-            <li class="navbar__menu__item">Education</li>
-            <li class="navbar__menu__item">Testimonials</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>
+            <a href="#">Minji Kim</a>
+        </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active" data-link="#Home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My Projects</li>
+                <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            </ul>
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
+
+
+
     <!-- Home -->
     <section id="Home">
-        <img 
+
+        <div class="home__container">
+            <img 
             src="imgs/profile.png" 
             alt="Minji's profile image" 
             class="home__avatar"
-        />
-        <h2 class="home__intro">Hello, I'm</h2>
-        <br>
-        <h1 class="home__title">Minji Kim</h1>
-        <button class="contact">CONTACT ME</button>
+            />
+            <h3 class="home__intro">Hello, I'm</h3>
+            <h1 class="home__title">Minji Kim</h1>
+            <h3 class="home__intro">Graduate student in Dallas, TX</h3>
+            <button class="contact">CONTACT ME</button>
+        </div>
+
     </section>    
+
     <!-- About -->
-    <section id="about"></section>
+    <section id="about" class="section section__container">
+        <h1>About Me</h1>
+        <p class="about__me">
+            Currently, I am completing a Master of Science in Computer Science
+            at Texas A&M University-Commerce with a graduation date of May 2021. 
+            Also, I am developing my Master’s thesis focused on network attack identification 
+            at an early stage using machine learning models.
+            I will be available for full-time Software Engineering or Data Science opportunities, starting May 2021.           
+            Besides my studies, I like to help others.
+            As an example of my volunteer work experience, 
+            I was in an international volunteer team of 23 people 
+            to improve the educational environment in Laos, 
+            a Southeast Asian country.
+        </p>
+        <div class="about__field">
+            <div class="field">
+                <div class="field__icon">
+                    <i class="fas fa-laptop-code"></i>          
+                </div>
+                <h2 class="field__title">Software Engineering</h2>
+                <p class="field__description">
+                    Object oriented programming, Software Development Life Cycle
+                <br />Front-end, Back-end
+                </p>
+            </div>
+
+            <div class="field">
+                <div class="field__icon">
+                    <i class="fas fa-brain"></i>            
+                </div>
+                <h2 class="field__title">Machine Learning</h2>
+                <p class="field__description">
+                    TensorFlow, Keras, Scikit-learn, PyTorch, UMAP
+                </p>
+
+            </div>
+        </div>
+        <div class="about__video">
+            <video width="560" height="315" controls preload="metadata">
+                <source src="video/2016_Hongik International_Volunteer_Laos.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+
     <!-- Skills -->
-    <section id="skills"></section>
-    <!-- My jounery -->
-    <section id="jounery"></section>
-    <!-- Education -->
-    <section id="education"></section>
+    <section id="skills" class="section">
+        <section class="section__container">
+            <h1 class="section__skill__container">Skills</h1>
+            <p class="section__skill__container">
+                Passion for learning new technologies.
+                Ability to learn new concepts quickly and efficiently.
+                Capable of working within a team environment and independently. 
+                Ability to plan and time schedule, work under strict
+                time pressure and adapt quickly when needed.
+            </p>
+
+            <div class="skillset">
+                <div class="skillset__left">
+                    <div class="skill">
+                        <h3 class="skillset__title">Programming Languages</h3>
+                        <ul class="skill_description">
+                            <li><span>Python</span>
+                            <li><span>C/C++</span>
+                            <li><span>Java</span>
+                            <li><span>R</span>
+                            <li><span>SQL</span>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skillset__title">Web Technologies</h3>
+                        <ul class="skill_description">
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Javascript/Typescript</span></li>
+                            <li><span>Flask</span></li>
+                            <li><span>Streamlit</span></li>
+                            <li><span>React.js</span></li>
+                            <li><span>jQuery</span></li>
+                            <li><span>Node.js</span></li>
+                            <li><span>Bootstrap</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="skillset__middle">
+                    <div class="skill">
+                        <h3 class="skillset__title">Machine Learning</h3>
+                        <ul class="skill_description">
+                            <li><span>TensorFlow</span></li>
+                            <li><span>Keras</span></li>
+                            <li><span>Scikit-learn</span></li>
+                            <li><span>PyTorch</span></li>
+                            <li><span>UMAP</span></li>
+                            <li><span>Pandas</span></li>
+                            <li><span>Numpy</span></li>
+                            <li><span>Seaborn</span></li>
+                            <li><span>Matplotlib</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="skill_description">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Jupyter notebooks/Jupyter lab</span></li>
+                            <li><span>R studio</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            
+                <div class="skillset__right">
+                    <div class="skill">
+                        <h3 class="skillset__title">Databases</h3>
+                        <ul class="skill_description">
+                            <li><span>MySQL</span></li>
+                            <li><span>MS SQL Server</span></li>
+                            <li><span>SQLite</span></li>
+                            <li><span>PostgreSQL</span></li>
+                            <li><span>MongoDB</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skillset__title">DevOps</h3>
+                        <ul class="skill_description">
+                            <li><span>Git</span></li>
+                            <li><span>AWS</span></li>
+                            <li><span>GCP</span></li>
+                            <li><span>Bitbucket</span></li>
+                            <li><span>Docker</span></li>
+                            <li><span>Kubernetes</span></li>
+                        </ul>
+                    </div>
+    
+                </div>
+        
+            </div>
+
+        </section>
+    </section>
+
+    <!-- My projects -->
+    <section id="work" class="section">
+        <section class="section__container">
+            <h1>My Projects</h1>
+
+            <div class="work__projects">
+                <a href="" class="project" target="blank">
+                    <img
+                    src="imgs/master-thesis.png"
+                    alt="master-thesis"
+                    class="project__img"
+                    />
+                    <div class="project__description">
+                    <h3>Early Network Identification</h3>
+                    <span>Pyhton, Tensorflow, Keras, UMAP, PyTorch, Scapy, Pandas, Numpy, Matplotlib, Seaborn</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/minji-mia/salary-estimator-blog" class="project" target="blank">
+                    <img
+                    src="imgs/salary-estimator.png"
+                    alt="Salary Estimator"
+                    class="project__img"
+                    />
+                    <div class="project__description">
+                    <h3>Salary Estimator</h3>
+                    <span>Pyhton, Scikit-learn, Pandas, Numpy, Matplotlib, Seaborn, Streamlit, SQLite, Docker, Kubernetes, Helm</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/minji-mia/JPMorgan-Chase-Virtual-Internship" class="project" target="blank">
+                    <img
+                    src="imgs/JPMorgan-Virtual-Internship.png"
+                    alt="JPMorgan-Virtual-Internship"
+                    class="project__img"
+                    />
+                    <div class="project__description">
+                    <h3>JPMorgan Virtual Internship</h3>
+                    <span>Pyhton, React, Typescript, HTML, CSS, Node.js</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/minji-mia/Quantium-Virtual-Internship" class="project" target="blank">
+                    <img
+                    src="imgs/Quantium-Virtual-Internship.png"
+                    alt="Quantium-Virtual-Internship"
+                    class="project__img"
+                    />
+                    <div class="project__description">
+                    <h3>Quantium Virtual Internship</h3>
+                    <span>R, R studio</span>
+                    </div>
+                </a>
+
+                <a href="" class="project" target="blank">
+                    <img
+                    src="imgs/movie-bot.png"
+                    alt="movie-bot"
+                    class="project__img"
+                    />
+                    <div class="project__description">
+                    <h3>XD Movie Chatbot</h3>
+                    <span>Python, AWS EC2, BeautifulSoup, Requests, Ubuntu Linux</span>
+                    </div>
+                </a>
+
+                <a href="" class="project" target="blank">
+                    <img
+                    src="imgs/cfgi.png"
+                    alt="cfgi"
+                    class="project__img"
+                    />
+                    <div class="project__description">
+                    <h3>Context Free Grammar Interpreter GUI</h3>
+                    <span>Python, PyQt5</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank">
+                    <img
+                    src="imgs/hand-gesture.png"
+                    alt="hand-gesture"
+                    class="project__img"
+                    />
+                    <div class="project__description">
+                    <h3>Hand Gesture Recognition</h3>
+                    <span>Python, OpenCV, Tensorflow, Keras, GCP</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank">
+                    <img
+                    src="imgs/hotdeal-bot.png"
+                    alt="hotdeal-bot"
+                    class="project__img"
+                    />
+                    <div class="project__description">
+                    <h3>Hotdeal Bot</h3>
+                    <span>Clone coding with HTML, CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank">
+                    <img
+                    src="imgs/volcanoes-map.png"
+                    alt="volcanoes-map"
+                    class="project__img"
+                    />
+                    <div class="project__description">
+                    <h3>Volcanoes Map</h3>
+                    <span>Python, Pandas, Folium, HTML</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+    </section>
+
     <!-- Testimonials -->
-    <section id="testimonials"></section>
+    <section id="testimonials" class="section">
+        <section class="section__container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial__avatar">
+                        <i class="far fa-user-circle"></i>
+                    </div>
+    
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            She is very pleasant and courtcous to not only myself 
+                            but also to every personnel within our organization.
+                            I would like to summarize Minji Kim as a promising employee 
+                            that is confident and intelligent.
+                        </p>
+                        <p class="name"><a href="https://github.com/minji-mia/internship/blob/main/reference%20letter.pdf">Jung soo Lee</a><br/>Director of Production Management/CVE Technology Group Inc.</p>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </section>
+
+
+    </section>
+    
     <!-- Contact -->
-    <section id="contact"></section>
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's Talk</h1>
+        <h2 class="contact__email">minjikim.cs@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/minji-mia" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/minji-mia/?locale=en_US" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a href="mailto: minjikim.cs@gmail.com" target="_blank">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+        <p class="contact__rights">
+            © 2020 Minji Kim. All Right Reserved.
+        </p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-circle-up"></i>
+    </button>
 </body>
 </html>
