@@ -22,9 +22,11 @@
   <a href="https://github.com/minji-mia/portfolio/blob/main/LICENSE" target="_blank">
     <img src="https://img.shields.io/badge/license-MIT-green" />
   </a> 
+  <br />
+  <a href="https://minji-mia.com/" target="_blank">
+    <img src=https://user-images.githubusercontent.com/52568892/105366827-640a1780-5bc5-11eb-95f9-ce428e2756f2.png />
+  </a>
 </div>
-
-[![Copy of Untitled (1)](https://user-images.githubusercontent.com/52568892/105366827-640a1780-5bc5-11eb-95f9-ce428e2756f2.png)](https://minji-mia.com/)
 
 ## Built with
 
