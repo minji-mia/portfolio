@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://minji-mia.com/" target="_blank">
-    <h1>Hello, I'm Minji Kim</h1>
+    <h1>Hello 👋, I'm Minji Kim 👩‍💻</h1>
   </a> 
   <br />
   <a href="https://www.linkedin.com/in/minji-mia/?locale=en_US" target="_blank">
