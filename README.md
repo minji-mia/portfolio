@@ -16,8 +16,6 @@
     <img src=https://img.shields.io/badge/Gmail-minjikim.cs%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white />
   </a>
   <br />
-  <hr/>
-  <h5>This repo is for my portfolio website.</h5> 
   <br />
   <a href="https://github.com/minji-mia/portfolio/blob/main/LICENSE" target="_blank">
     <img src="https://img.shields.io/badge/license-MIT-green" />
